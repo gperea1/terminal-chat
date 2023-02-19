@@ -4,7 +4,7 @@ import requests
 
 def make_request_request(server_url, message):
     full_url = urljoin(server_url, "/message")
-
+    
     raw_data = dict()
     raw_data["data"] = {"command": None, "message": message } 
     
@@ -45,3 +45,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
