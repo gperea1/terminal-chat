@@ -36,7 +36,6 @@ def main():
     print()
 
     while True:
-
         message = input()
         data = make_request_request(args.server_url, message)
         print(f'-->{data.get("message")}')
